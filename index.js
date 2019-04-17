@@ -3,8 +3,8 @@ const botconfig = require("./botconfig.json");
 const discord = require("discord.js");
 const bot = new discord.Client({disableEveryone: false});
 const fs = require("fs");
-var absent = 0;
-var id = 0;
+var absent;
+var id;
 var session;
 var reason;
 
