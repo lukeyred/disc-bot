@@ -3,10 +3,6 @@ const botconfig = require("./botconfig.json");
 const discord = require("discord.js");
 const bot = new discord.Client({disableEveryone: false});
 const fs = require("fs");
-var absent;
-var id;
-var session;
-var reason;
 
 bot.commands = new discord.Collection();
 
@@ -65,8 +61,8 @@ if(commandfile) commandfile.run(bot,message,args);
 
 
 if (cmd === `${prefix}absent`){
-  var absent = 1;
-  var id = message.author.id;
+  let absent = 1;
+  let id = message.author.id;
   return message.channel.send("Which session will you be absent for?");
 }
 
