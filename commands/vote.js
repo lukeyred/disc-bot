@@ -25,8 +25,6 @@ const embed = new discord.RichEmbed()
   }).catch(function() {
     //Something
    });
-
-  message.delete().catch();
 }
 
 module.exports.help = {
