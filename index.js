@@ -63,43 +63,13 @@ if(commandfile) commandfile.run(bot,message,args);
 
 
 
-while (absent = 1){
-  if (message.author.id = id){
-    if (cmd === "pmqs"){
-      session = "PMQs";
-      absent = 2;
-      message.channel.send("Why will you be absent?");
-    }else if (cmd === "mqs"){
-      session = "MQs";
-      absent = 2;
-      message.channel.send("Why will you be absent?");
-    }else if (cmd === "leg"){
-      session = "Legislative";
-      absent = 2;
-      message.channel.send("Why will you be absent?");
-    }
-  }
-}
-
-while (absent = 2){
-  if (message.author.id = id){
-    let reason = cmd
-    let achannel = message.guild.channels.find(`name`,"absences");
-    const embed = new discord.RichEmbed()
-      .setTitle("Absence")
-      .setFooter(`From ${message.author.username}`,`${message.author.avatarURL}`)
-      .setDescription(`Username: ${message.author.username}\nSession: ${session}\nReason: ${reason}`)
-      .setColor(0xaf052a)
-    achannel.send({embed})
-  }
-}
 
 
 
 if (cmd === `${prefix}absent`){
   absent = 1;
   id = message.author.id;
-  message.channel.send("Which session will you be absent for?");
+  return message.channel.send("Which session will you be absent for?");
 }
 
 
