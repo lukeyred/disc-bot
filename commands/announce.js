@@ -10,9 +10,8 @@ let achannel = message.guild.channels.find(`name`,"announcements");
 if (!achannel) return message.channel.send("Couldn't find channel.");
 
 const embed = new discord.RichEmbed()
-  .setTitle("Announcement :exclamation: ")
-  .setAuthor(`From ${message.author.username}`, "")
-  .setFooter("",`${message.author.avatarURL}`)
+  .setTitle("Announcement")
+  .setFooter(`From ${message.author.username}`,`${message.author.avatarURL}`)
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
