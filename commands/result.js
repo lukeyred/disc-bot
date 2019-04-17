@@ -29,5 +29,5 @@ const embed = new discord.RichEmbed()
 }
 
 module.exports.help = {
-  name: "vote"
+  name: "result"
 }
