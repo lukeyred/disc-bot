@@ -20,7 +20,7 @@ const embed = new discord.RichEmbed()
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
-  .setColor(0x00AE86)
+  .setColor(0x42a7f4)
   .setDescription(botmessage)
   message.channel.send("@everyone");
   message.channel.send({embed});
