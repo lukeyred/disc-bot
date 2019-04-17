@@ -65,7 +65,7 @@ if(commandfile) commandfile.run(bot,message,args);
 
 
 if (cmd === `${prefix}absent`){
-  absent = 1;
+  var absent = 1;
   var id = message.author.id;
   return message.channel.send("Which session will you be absent for?");
 }
