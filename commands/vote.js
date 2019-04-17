@@ -17,7 +17,7 @@ const embed = new discord.RichEmbed()
   .setColor(0x00AE86)
   .setDescription(botmessage)
   message.channel.send("@everyone");
-  message.channel.send({embed});
+  message.channel.send({embed})
     .then(function (message) {
     message.react(":regional_indicator_y:")
     message.react(":regional_indicator_n:")
