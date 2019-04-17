@@ -6,10 +6,10 @@ module.exports.run = async (bot,message,args) =>{
 if(!message.member.roles.find(r => r.name === "National Executive Council")) return message.channel.send("You do not have permission to run this command.")
 
 
-if (args[0] === "Aye"){
-  let botmessage = "The ayes have it";
-} else if (args[0] === "Nay") {
-  let botmessage = "The nays have it";
+if (args[0] === "aye"){
+  var botmessage = "The ayes have it";
+} else if (args[0] === "nay") {
+  var botmessage = "The nays have it";
 } else{
   return message.channel.send("You have not entered the correct option.");
 }
