@@ -3,10 +3,10 @@ const embed = new discord.RichEmbed()
 console.log("works");
 module.exports.run = async (bot,message,args) =>{
 
-if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You do not have permission.");
+if(!message.member.roles.find(r => r.name === "National Executive Council")) return message.channel.send("You do not have permission to run this command.")
+
 
 let botmessage = args.join(" ");
-if (!achannel) return message.channel.send("Couldn't find channel.");
 
 const embed = new discord.RichEmbed()
   .setTitle("Vote")
@@ -21,7 +21,6 @@ const embed = new discord.RichEmbed()
     .then(function (message) {
     message.react(":regional_indicator_y:")
     message.react(":regional_indicator_n:")
-    message.pin()
     message.delete()
   }).catch(function() {
     //Something
