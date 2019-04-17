@@ -21,10 +21,11 @@ const embed = new discord.RichEmbed()
     .then(function (message) {
     message.react(":regional_indicator_y:")
     message.react(":regional_indicator_n:")
-    message.delete()
   }).catch(function() {
     //Something
    });
+
+  message.delete().catch()
 }
 
 module.exports.help = {
