@@ -12,7 +12,7 @@ if (!achannel) return message.channel.send("Couldn't find channel.");
 const embed = new discord.RichEmbed()
   .setTitle("Announcement :exclamation: ")
   .setAuthor(`From ${message.author.username}`, "")
-  .setThumbnail(message.author.avatarURL)
+  .setFooter("",`${message.author.avatarURL}`)
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
