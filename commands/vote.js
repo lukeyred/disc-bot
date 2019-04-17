@@ -19,8 +19,8 @@ const embed = new discord.RichEmbed()
   message.channel.send("@everyone");
   message.channel.send({embed})
     .then(function (message) {
-    message.react(":regional_indicator_y:")
-    message.react(":regional_indicator_n:")
+    message.react("🇾")
+    message.react("🇳")
   }).catch(function() {
     //Something
    });
