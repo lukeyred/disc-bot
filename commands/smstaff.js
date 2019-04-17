@@ -9,7 +9,7 @@ if (dad != botconfig.ServerID ) {
 }else{
   let name = args[0];
   const channel = await message.guild.createChannel(`Record-${args[0]}`);
-  await channel.setParent('557351927030087731');
+  await channel.setParent('568157324607488011');
   const embed = new discord.RichEmbed()
     .setTitle("New Staff Report")
     .setDescription(`This is the start of ${args[0]}'s staff record.`)

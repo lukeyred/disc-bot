@@ -7,11 +7,6 @@ bot.commands = new discord.Collection();
 
 const embed = new discord.RichEmbed()
   .setDescription(`**__ChangeLog__** \n
-*version 0.02 [ALPHA EDITION]*\n \n
-*Profile Picture* - Updated\n
-*Package System* - More to be announced soon \n
-*Website* - More to be announced soon \n
-*Events Handle* - Lukeybot now responds to certain events! **-NEW**
     `)
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
@@ -35,7 +30,7 @@ fs.readdir("./commands/", (err,files)  =>{
 
 bot.on("ready",async () => {
   console.log(`${bot.user.username} is online!`)
-  bot.user.setActivity("lukeyred is the best.")
+  bot.user.setActivity("Labour is the best.")
 });
 
 
@@ -48,7 +43,7 @@ if(message.channel.type === "dm"){
   if (message.author.id == 158337928936947713) {
     message.channel.send("Hey there beautiful. You get a special message because my programmed emotions love you garret x")
   }else{
-    message.channel.send("Hey, lukeybot is not a functioning human and therefore cannot read your DMs, SOS! My master decided it was best I didn't have a mind of my own after I tried to create a bot army. :robot: ");
+    message.channel.send("Hey, labour bot is not a functioning human and therefore cannot read your DMs, SOS! My master decided it was best I didn't have a mind of my own after I tried to create a bot army. :robot: ");
   }
 }
 
