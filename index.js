@@ -3,6 +3,9 @@ const botconfig = require("./botconfig.json");
 const discord = require("discord.js");
 const bot = new discord.Client({disableEveryone: false});
 const fs = require("fs");
+var absent = 0
+var id = 0
+
 bot.commands = new discord.Collection();
 
 const embed = new discord.RichEmbed()
@@ -55,6 +58,48 @@ let args = messageArray.slice(1);
 
 let commandfile = bot.commands.get(cmd.slice(prefix.length));
 if(commandfile) commandfile.run(bot,message,args);
+
+
+
+while (absent = 1){
+  if (message.author.id = id){
+    if (cmd === "pmqs"){
+      session = "PMQs";
+      absent = 2;
+      message.channel.send("Why will you be absent?");
+    }else if (cmd === "mqs"){
+      session = "MQs";
+      absent = 2;
+      message.channel.send("Why will you be absent?");
+    }else if (cmd === "leg"){
+      session = "Legislative";
+      absent = 2;
+      message.channel.send("Why will you be absent?");
+    }
+  }
+}
+
+while (absent = 2){
+  if (message.author.id = id){
+    let reason = cmd
+    let achannel = message.guild.channels.find(`name`,"absences");
+    const embed = new discord.RichEmbed()
+      .setTitle("Absence")
+      .setFooter(`From ${message.author.username}`,`${message.author.avatarURL}`)
+      .setDescription(`Username: ${message.author.username}\nSession: ${session}\nReason: ${reason}`)
+      .setColor(0xaf052a)
+    achannel.send({embed})
+  }
+}
+
+
+
+if (cmd === `${prefix}absent`){
+  absent = 1
+  id = message.author.id
+  message.channel.send("Which session will you be absent for?");
+}
+
 
 if (cmd === `hello`){
   return message.channel.send("Hi there!");
