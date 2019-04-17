@@ -95,8 +95,8 @@ while (absent = 2){
 
 
 if (cmd === `${prefix}absent`){
-  absent = 1
-  id = message.author.id
+  var absent = 1
+  var id = message.author.id
   message.channel.send("Which session will you be absent for?");
 }
 
