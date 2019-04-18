@@ -60,13 +60,6 @@ if(commandfile) commandfile.run(bot,message,args);
 
 
 
-if (cmd === `${prefix}absent`){
-  let absent = 1;
-  let id = message.author.id;
-  return message.channel.send("Which session will you be absent for?");
-}
-
-
 if (cmd === `hello`){
   return message.channel.send("Hi there!");
 }
