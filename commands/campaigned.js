@@ -33,5 +33,5 @@ if (dad != botconfig.ServerID ) {
 
 
 module.exports.help = {
-    name: "capaigned"
+    name: "campaigned"
   }
