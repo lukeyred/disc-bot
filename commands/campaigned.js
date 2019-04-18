@@ -10,8 +10,8 @@ if (dad != botconfig.ServerID ) {
 
   let named = args[0];
   let name = named.toLowerCase();
-  let narggs = args.slice(1);
-  let nargs = narggs.join(" ");
+  let narggs = args.slice(0);
+  let nargs = args.join(" ");
   let channel = message.guild.channels.find(`name`,`campaign-logs`);
   if(!channel) return message.channel.send("Channel not found.");
   const embed = new discord.RichEmbed()
