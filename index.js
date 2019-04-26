@@ -41,12 +41,12 @@ bot.on("message", async message =>{
 
 if (message.author.bot) return;
 if(message.channel.type === "dm"){
-  if (message.author.id == 158337928936947713) {
-    message.channel.send("Hey there beautiful. You get a special message because my programmed emotions love you garret x")
+  if (message === "Hello geeza"){
+    message.channel.send("Hey there");
   }else{
-    message.channel.send("Hey, labour bot is not a functioning human and therefore cannot read your DMs, SOS! My master decided it was best I didn't have a mind of my own after I tried to create a bot army. :robot: ");
+    message.channel.send("I don't understand.");
   }
-}
+}else{
 
 let prefix = botconfig.prefix;
 let messageArray = message.content.split(/ +/);
@@ -84,7 +84,7 @@ if (cmd === `${prefix}admin-access`){
 
 }
 
-
+}
 });
 
 
