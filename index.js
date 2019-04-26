@@ -48,7 +48,16 @@ if(message.channel.type === "dm"){
 let messaged = message.content.toLowerCase();
 
   if (messaged.indexOf("hello") !== -1){
-    message.channel.send("Hey there");
+
+    const embed = new discord.RichEmbed()
+      .setTitle("Hello Message")
+      .setFooter(`From the Labour Innovative Team`)
+      /*
+       * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+       */
+      .setColor(0x00AE86)
+      .setDescription(`Hello there ${message.author.username},\nAt Labour we're striving for innovation. Our bot has custom coded AI that is learning everyday how to pick up the questions you ask it.`)
+    message.channel.send({embed});
 
   }else{
     message.channel.send("I don't understand.");
