@@ -39,14 +39,23 @@ bot.on("ready",async () => {
 
 bot.on("message", async message =>{
 
+//MESSAGE SHIT
+
 if (message.author.bot) return;
+
 if(message.channel.type === "dm"){
+
 let messaged = message.content.toLowerCase();
-  if (messaged.includes("hello") = true){
+
+  if (messaged.indexOf("hello") !== -1){
     message.channel.send("Hey there");
+
   }else{
     message.channel.send("I don't understand.");
+
   }
+
+// END OF MESSAGE SHIT
 }else{
 
 let prefix = botconfig.prefix;
