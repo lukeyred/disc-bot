@@ -61,7 +61,7 @@ let messaged = message.content.toLowerCase();
        * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
        */
       .setColor(0x725387)
-      .setDescription(`**Hello there ${message.author.username}**,\n\nAt Labour we're striving for innovation. Our bot has custom coded AI that is learning everyday how to pick up the questions you ask it. \n\n *Do !recommend (reccomendation) to recommenda  new feature for this AI.*`)
+      .setDescription(`**Hello there ${message.author.username}**,\n\nAt Labour we're striving for innovation. Our bot has custom coded AI that is learning everyday how to pick up the questions you ask it. \n\n *Do !recommend (recommendation) to recommend a new feature for this AI.*`)
     message.channel.send({embed});
 
   }else if (messaged.indexOf("!recommend") !== -1){
