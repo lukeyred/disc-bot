@@ -67,7 +67,7 @@ let messaged = message.content.toLowerCase();
   }else if (cmd=== `${prefix}recommend`){
     let botmessage = args.join(" ");
     bot.fetchUser('120246971737833473').then((user) => {
-        user.send(`Recommendation from ${message.author.username}: ${botmessage}`);
+        user.send(`Recommendation from ${message.author.username}: ${botmessage}`)
 )};
 
   }else{
