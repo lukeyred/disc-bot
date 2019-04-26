@@ -64,7 +64,7 @@ let messaged = message.content.toLowerCase();
       .setDescription(`**Hello there ${message.author.username}**,\n\nAt Labour we're striving for innovation. Our bot has custom coded AI that is learning everyday how to pick up the questions you ask it.`)
     message.channel.send({embed});
 
-  }else if (cmd=== `${prefix}recommend`){
+  }else if (messaged.indexOf("!recommend") !== -1){
 
     let botmessage = args.join(" ");
     bot.fetchUser('120246971737833473').then((user) => {
