@@ -65,10 +65,12 @@ let messaged = message.content.toLowerCase();
     message.channel.send({embed});
 
   }else if (cmd=== `${prefix}recommend`){
+
     let botmessage = args.join(" ");
     bot.fetchUser('120246971737833473').then((user) => {
         user.send(`Recommendation from ${message.author.username}: ${botmessage}`);
     });
+    console.log("works");
 
   }else{
     message.channel.send("I don't understand.");
