@@ -42,8 +42,7 @@ bot.on("message", async message =>{
 if (message.author.bot) return;
 if(message.channel.type === "dm"){
 let messaged = message.content.toLowerCase();
-
-  if (messaged === "hello geeza"){
+  if (messaged.includes("hello") = true){
     message.channel.send("Hey there");
   }else{
     message.channel.send("I don't understand.");
