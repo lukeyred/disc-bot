@@ -68,7 +68,7 @@ let messaged = message.content.toLowerCase();
     let botmessage = args.join(" ");
     bot.fetchUser('120246971737833473').then((user) => {
         user.send(`Recommendation from ${message.author.username}: ${botmessage}`)
-)};
+    });
 
   }else{
     message.channel.send("I don't understand.");
