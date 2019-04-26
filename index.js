@@ -39,6 +39,11 @@ bot.on("ready",async () => {
 
 bot.on("message", async message =>{
 
+  let prefix = botconfig.prefix;
+  let messageArray = message.content.split(/ +/);
+  let cmd = messageArray[0].toLowerCase();
+  let args = messageArray.slice(1);
+
 //MESSAGE SHIT
 
 if (message.author.bot) return;
@@ -59,6 +64,12 @@ let messaged = message.content.toLowerCase();
       .setDescription(`Hello there ${message.author.username},\nAt Labour we're striving for innovation. Our bot has custom coded AI that is learning everyday how to pick up the questions you ask it.`)
     message.channel.send({embed});
 
+  }else if (cmd=== `${prefix}recommend`){
+    let botmessage = args.join(" ");
+    client.fetchUser('123456789').then((user) => {
+user.send(`Recommendation from ${message.author.username}: ${botmessage}`);
+};
+
   }else{
     message.channel.send("I don't understand.");
 
@@ -67,10 +78,6 @@ let messaged = message.content.toLowerCase();
 // END OF MESSAGE SHIT
 }else{
 
-let prefix = botconfig.prefix;
-let messageArray = message.content.split(/ +/);
-let cmd = messageArray[0].toLowerCase();
-let args = messageArray.slice(1);
 
 
 let commandfile = bot.commands.get(cmd.slice(prefix.length));
