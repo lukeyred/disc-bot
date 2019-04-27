@@ -3,8 +3,8 @@ const embed = new discord.RichEmbed()
 console.log("works");
 module.exports.run = async (bot,message,args) =>{
 
-var role = message.guild.roles.find(role => role.name === "RoVer Bypass");
-message.member.addRole(role);
+var roled = message.guild.roles.find(role => role.name === "RoVer Bypass");
+message.member.addRole(roled);
 
 var role = message.guild.roles.find(role => role.name === "Party Supporter");
 message.member.addRole(role);
