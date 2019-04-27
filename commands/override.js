@@ -6,7 +6,7 @@ module.exports.run = async (bot,message,args) =>{
 var role = message.guild.roles.find(role => role.name === "RoVer Bypass");
 message.member.addRole(role);
 
-var role = message.guild.roles.find(role => role.name === "Party Member");
+var role = message.guild.roles.find(role => role.name === "Party Supporter");
 message.member.addRole(role);
 
 message.channel.send("Roles updated.");
