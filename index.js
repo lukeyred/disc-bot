@@ -44,16 +44,17 @@ bot.on('guildMemberAdd', member => {
 
 bot.on("message", async message =>{
 
-  let prefix = botconfig.prefix;
-  let messageArray = message.content.split(/ +/);
-  let cmd = messageArray[0].toLowerCase();
-  let args = messageArray.slice(1);
+
 
 //MESSAGE SHIT
 
 if (message.author.bot) return;
 
 if(message.channel.type === "dm"){
+  let prefix = botconfig.prefix;
+  let messageArray = message.content.split(/ +/);
+  let cmd = messageArray[0].toLowerCase();
+  let args = messageArray.slice(1);
 
 let messaged = message.content.toLowerCase();
 
@@ -86,7 +87,10 @@ let messaged = message.content.toLowerCase();
 // END OF MESSAGE SHIT
 }else{
 
-
+  let prefix = botconfig.prefix;
+  let messageArray = message.content.split(/ +/);
+  let cmd = messageArray[0].toLowerCase();
+  let args = messageArray.slice(1);
 
 let commandfile = bot.commands.get(cmd.slice(prefix.length));
 if(commandfile) commandfile.run(bot,message,args);
