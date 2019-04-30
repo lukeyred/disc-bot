@@ -125,14 +125,15 @@ else if (cmd === `${prefix}admin-access`){
     setTimeout(func,2000);
     setTimeout(func2,4000);
 
-  }
+
 }else{
     message.channel.send("You are not a bot admin.");
   }
 
 }
+}
+);
 
-});
 
 
 bot.login(process.env.token);
