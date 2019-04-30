@@ -56,11 +56,10 @@ if(message.channel.type === "dm"){
   let cmd = messageArray[0].toLowerCase();
   let args = messageArray.slice(1);
 
-function funcheck(){
-  if(!message.content.startsWith(prefix))return;
-}
+var d = message.content.startswith(prefix);
+console.log(d);
 
-funcheck();
+
 
 let messaged = message.content.toLowerCase();
 
