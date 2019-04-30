@@ -102,19 +102,28 @@ if (cmd === `hello`){
   return message.channel.send("Hi there!");
 }
 
-if (cmd === `${prefix}ruby`){
+else if (cmd === `${prefix}ruby`){
   return message.channel.send("Ruby you dickHED");
 }
 
-if (cmd === `${prefix}changelog`){
+else if (cmd === `${prefix}changelog`){
   return message.channel.send({embed});
 }
 
-if (cmd === `${prefix}admin-access`){
+else if (cmd === `${prefix}admin-access`){
   message.channel.send("Checking you are a bot admin...");
   console.log(message.author.id);
   if (message.author.id == 120246971737833473){
-    bot.user.setAvatar('https://i.imgur.com/mXjM47N.png');
+    message.channel.send("Admin privelages enhanced. Setting level.")
+    function func(){
+      message.channel.send("Owner Level set. Disregard error protocol - 1202");
+    }
+    function func2(){
+      message.channel.send("Error protocol - 1204 in affect. Reloop.");
+    }
+
+    setTimeout(func,2000);
+    setTimeout(func2,4000);
 
   }else{
     message.channel.send("You are not a bot admin.")
