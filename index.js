@@ -131,8 +131,7 @@ else if (cmd === `${prefix}admin-access`){
   }
 
 }
-}
-);
+};
 
 
 
