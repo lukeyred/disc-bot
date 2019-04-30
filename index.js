@@ -43,7 +43,7 @@ bot.on('guildMemberAdd', member => {
 
 
 bot.on("message", async message =>{
-if(!message.content.startsWith(prefix))return;
+
 
 
 //MESSAGE SHIT
@@ -56,6 +56,7 @@ if(message.channel.type === "dm"){
   let cmd = messageArray[0].toLowerCase();
   let args = messageArray.slice(1);
 
+if(!message.content.startsWith(prefix))return;
 let messaged = message.content.toLowerCase();
 
   if (messaged.indexOf("hello") !== -1){
