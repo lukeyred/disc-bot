@@ -172,7 +172,7 @@ else if (cmd === `${prefix}admin-override`){
 
 }
 
-else if (cmd === `${prefix}protocol 12 override`){
+else if (cmd === `${prefix}protocol-12-override`){
   message.channel.send("Checking you are a bot admin...");
   console.log(message.author.id);
   if (message.author.id == 120246971737833473){
