@@ -3,6 +3,9 @@ const embed = new discord.RichEmbed()
 console.log("works");
 module.exports.run = async (bot,message,args) =>{
 
+
+
+
 if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You do not have permission.");
 
 let botmessage = args.join(" ");

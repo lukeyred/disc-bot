@@ -100,6 +100,8 @@ let commandfile = bot.commands.get(cmd.slice(prefix.length));
 if(commandfile) commandfile.run(bot,message,args);
 
 var d = cmd.startsWith(prefix);
+
+if (d = false || cmd !== "hello") return;
 console.log(d);
 
 
