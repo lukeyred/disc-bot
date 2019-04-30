@@ -181,7 +181,7 @@ else if (cmd === `${prefix}protocol-12-override`){
       message.channel.send("Protocol 12: Overriden");
     }
     function func2(){
-      message.channel.send("A.R.C LAUNCHED");
+      message.channel.send("**A.R.C DEFENCE INITIATED**");
     }
 
     function func3(){
@@ -189,7 +189,7 @@ else if (cmd === `${prefix}protocol-12-override`){
     }
 
     function func4(){
-      message.channel.send("A.R.C SHUTDOWN");
+      message.channel.send("***A.R.C SHUTDOWN**");
     }
 
     setTimeout(func,6000);
