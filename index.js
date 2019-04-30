@@ -101,7 +101,7 @@ if(commandfile) commandfile.run(bot,message,args);
 
 var d = cmd.startsWith(prefix);
 
-if (d === false || cmd !== "hello") return;
+if (d === false && cmd !== "hello") return;
 console.log(d);
 
 
