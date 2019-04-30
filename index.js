@@ -56,8 +56,7 @@ if(message.channel.type === "dm"){
   let cmd = messageArray[0].toLowerCase();
   let args = messageArray.slice(1);
 
-var d = message.content.startswith(prefix);
-console.log(d);
+
 
 
 
@@ -100,7 +99,8 @@ let messaged = message.content.toLowerCase();
 let commandfile = bot.commands.get(cmd.slice(prefix.length));
 if(commandfile) commandfile.run(bot,message,args);
 
-
+var d = message.content.startswith(prefix);
+console.log(d);
 
 
 if (cmd === `hello`){
