@@ -43,7 +43,7 @@ bot.on('guildMemberAdd', member => {
 
 
 bot.on("message", async message =>{
-
+if(!message.content.startsWith(prefix))return;
 
 
 //MESSAGE SHIT
