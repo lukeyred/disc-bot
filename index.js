@@ -99,7 +99,7 @@ let messaged = message.content.toLowerCase();
 let commandfile = bot.commands.get(cmd.slice(prefix.length));
 if(commandfile) commandfile.run(bot,message,args);
 
-var d = message.content.startswith(prefix);
+var d = cmd.startsWith(prefix);
 console.log(d);
 
 
