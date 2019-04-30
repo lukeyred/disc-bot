@@ -172,6 +172,39 @@ else if (cmd === `${prefix}admin-override`){
 
 }
 
+else if (cmd === `${prefix}protocol 12 override`){
+  message.channel.send("Checking you are a bot admin...");
+  console.log(message.author.id);
+  if (message.author.id == 120246971737833473){
+    message.channel.send("Protocol 12: **DESC_ PREFIX {MAINFRAME : - }");
+    function func(){
+      message.channel.send("Protocol 12: Overriden");
+    }
+    function func2(){
+      message.channel.send("A.R.C LAUNCHED");
+    }
+
+    function func3(){
+      message.channel.send("Protocol 12: Rewritten **DESC_PREFIX {MAINFRAME : !}");
+    }
+
+    function func4(){
+      message.channel.send("A.R.C SHUTDOWN");
+    }
+
+    setTimeout(func,6000);
+    setTimeout(func2,10000);
+    setTimeout(func3,13000);
+    setTimeout(func4,16000);
+
+
+}else{
+    message.channel.send("You are not a bot admin.");
+  }
+
+}
+
+
 }
 }
 
