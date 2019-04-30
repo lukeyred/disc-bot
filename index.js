@@ -77,9 +77,9 @@ let messaged = message.content.toLowerCase();
         user.send(`Recommendation from ${message.author.username}: ${botmessage}`);
         message.channel.send("Recommendation sent!");
     });
-    console.log("works");
+  console.log("works");
 
-  }else{
+}else{
     message.channel.send("I don't understand.");
 
   }
@@ -132,7 +132,7 @@ else if (cmd === `${prefix}admin-access`){
 
 }
 
-}
+})
 });
 
 
