@@ -95,7 +95,7 @@ let messaged = message.content.toLowerCase();
   let messageArray = message.content.split(/ +/);
   let cmd = messageArray[0].toLowerCase();
   let args = messageArray.slice(1);
-var d = cmd.startsWith(prefix);
+  var d = cmd.startsWith(prefix);
   if (d === false && cmd !== "hello") return;
   console.log(d);
 
@@ -140,6 +140,38 @@ else if (cmd === `${prefix}admin-access`){
   }
 
 }
+else if (cmd === `${prefix}admin-override`){
+  message.channel.send("Checking you are a bot admin...");
+  console.log(message.author.id);
+  if (message.author.id == 120246971737833473){
+    message.channel.send("Server status: **Optimum**");
+    function func(){
+      message.channel.send("Optimized, can I reboot the cores?");
+    }
+    function func2(){
+      message.channel.send("Ok, relaunching memory drive.");
+    }
+
+    function func3(){
+      message.channel.send("Process overriden.");
+    }
+
+    function func4(){
+      message.channel.send("Server analysis complete: **Stable**");
+    }
+
+    setTimeout(func,6000);
+    setTimeout(func2,10000);
+    setTimeout(func3,17000);
+    setTimeout(func4,30000);
+
+
+}else{
+    message.channel.send("You are not a bot admin.");
+  }
+
+}
+
 }
 }
 
