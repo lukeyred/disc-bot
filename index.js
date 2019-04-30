@@ -102,7 +102,7 @@ if (cmd === `hello`){
   return message.channel.send("Hi there!");
 }
 
-else if (cmd === `${prefix}reuby`){
+else if (cmd === `${prefix}ruby`){
   return message.channel.send("Ruby you dickHED");
 }
 
