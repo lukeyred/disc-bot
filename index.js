@@ -96,13 +96,15 @@ let messaged = message.content.toLowerCase();
   let cmd = messageArray[0].toLowerCase();
   let args = messageArray.slice(1);
 
+  if !(d === false && cmd !== "hello") return;
+  console.log(d);
+
 let commandfile = bot.commands.get(cmd.slice(prefix.length));
 if(commandfile) commandfile.run(bot,message,args);
 
 var d = cmd.startsWith(prefix);
 
-if !(d) return;
-console.log(d);
+
 
 
 if (cmd === `hello`){
