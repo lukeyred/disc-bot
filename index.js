@@ -132,9 +132,7 @@ else if (cmd === `${prefix}admin-access`){
 
 }
 
-})
 });
-
 
 
 bot.login(process.env.token);
