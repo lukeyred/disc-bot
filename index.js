@@ -189,7 +189,7 @@ else if (cmd === `${prefix}protocol-12-override`){
     }
 
     function func4(){
-      message.channel.send("***A.R.C SHUTDOWN**");
+      message.channel.send("**A.R.C SHUTDOWN**");
     }
 
     setTimeout(func,6000);
