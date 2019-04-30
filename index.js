@@ -114,7 +114,7 @@ else if (cmd === `${prefix}admin-access`){
   message.channel.send("Checking you are a bot admin...");
   console.log(message.author.id);
   if (message.author.id == 120246971737833473){
-    message.channel.send("Admin privelages enhanced. Setting level.")
+    message.channel.send("Admin privelages enhanced. Setting level.");
     function func(){
       message.channel.send("Owner Level set. Disregard error protocol - 1202");
     }
@@ -131,7 +131,7 @@ else if (cmd === `${prefix}admin-access`){
   }
 
 }
-};
+}
 
 );
 
