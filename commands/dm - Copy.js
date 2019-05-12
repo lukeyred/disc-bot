@@ -11,6 +11,7 @@ let botmessage = argss.join(" ");
 
 const embed = new discord.RichEmbed()
   .setDescription(`**MESSAGE FROM THE LABOUR TEAM:** ${botmessage}`)
+  .setThumbnail("http://jostevens.co.uk/wp-content/uploads/2018/06/cropped-labour-logo.png")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
