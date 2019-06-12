@@ -37,9 +37,6 @@ bot.on("ready",async () => {
 
 
 
-bot.on('guildMemberAdd', member => {
-    member.send("Hey there! If you're not in the labour group you can run the command !override and it will give you your roles. If you are in the labour group do !verify . If you'd like to join, click this link and join the group! https://www.roblox.com/groups/2655177/UK-Labour-Party-of-the-UK#!/about");
-});
 
 
 bot.on("message", async message =>{
